@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "unusualvolume"
+version = "0.1.0"
+description = "Monitor stock market transactions for unusual volume and (possibly) make millions."
+authors = ["Marc Ford <mrfxyz567@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mfdeux/unusualvolume"
+packages = [{ include = "unusualvolume" }]
+include = ["data/*"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.19.1"
+pandas = "^1.1.0"
+python-dateutil = "^2.8.1"
+click = "^7.1.2"
+yfinance = "^0.1.54"
+joblib = "^0.16.0"
+tqdm = "^4.48.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^7.17.0"
+black = "^19.10b0"
+
+[tool.poetry.scripts]
+unusualvolume = "unusualvolume.cli:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
