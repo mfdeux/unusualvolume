@@ -478,7 +478,7 @@ pandas = ">=0.24"
 requests = ">=2.20"
 
 [metadata]
-content-hash = "e7e45df662eb27239e28498903752362e33150295bc7f0f642a911f6cc60a2fd"
+content-hash = "9e42cd28d3f4a1ef246caacc16dfddaee1ee8f9ccf3b982b15cc300d2e9ba796"
 lock-version = "1.0"
 python-versions = "^3.8"
 

@@ -18,7 +18,7 @@ def print_result(data: typing.Dict):
 @click.group()
 def cli():
     """
-    Extract Venmo transactions from a profile with one command
+    Monitor stock market transactions for unusual volume and (possibly) make millions
 
 
     """
@@ -34,7 +34,7 @@ def cli():
 @click.option('--filter', help='Filter on ticker symbol')
 def scan(months: int, days: int, stddev: int, save: bool, filename: str, filter: str = None):
     """
-    Extract Venmo transactions from a profile with one command
+    Perform anomaly scan on downloaded Yahoo! Finance data
 
 
     """
