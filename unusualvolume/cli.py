@@ -52,8 +52,11 @@ def scan(months: int, days: int, stddev: int, save: bool, filename: str, filter:
         click.echo(f"Running anomaly scanner on {len(tickers)} stocks")
         anomalies = run_scanner(tickers, months, days, stddev)
 
-    for anomaly in anomalies:
-        print_result(anomaly)
+    if anomalies:
+        for anomaly in anomalies:
+            print_result(anomaly)
+    else:
+        click.echo(click.style('No anomalies were found', fg='red', bold=True))
 
     if anomalies and save:
         save_data(list(anomalies), filename)

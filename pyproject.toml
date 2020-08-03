@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "unusualvolume"
-version = "0.1.0"
-description = "Monitor stock market transactions for unusual volume and (possibly) make millions."
+version = "0.1.1"
+description = "Monitor stock market transactions for unusual volume and (possibly) make millions"
 authors = ["Marc Ford <mrfxyz567@gmail.com>"]
 license = "MIT"
 readme = "README.md"
