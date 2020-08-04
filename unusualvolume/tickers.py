@@ -37,9 +37,6 @@ def download_tickers():
             tickers.append({'symbol': line_split[0], 'name': line_split[1],
                             'exchange': 'other' if filename == 'otherlisted.txt' else 'nasdaq'})
 
-        # with open(os.path.join(DATA_DIR, filename), 'wb') as fp:
-        #     ftp.retrbinary(f'RETR {filename}', fp.write)
-
     with open(TICKER_FILE, 'w') as fw:
         json.dump(tickers, fw)
 
